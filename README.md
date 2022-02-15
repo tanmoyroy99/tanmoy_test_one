@@ -1,7 +1,6 @@
 "# tanmoy_test_one" 
 
 
-
 ### build Docker
 docker build -t <Image Name> .
 
@@ -23,7 +22,7 @@ docker ps
 #### check the docker process -a all
 docker ps -a
 
-docker container prune // to removed the untaged comment
+docker container prune // to removed the untaged and stop contaner
  
  ### docker run
  docker run <contaner Name>
@@ -42,8 +41,28 @@ docker container prune // to removed the untaged comment
 
  //printenv -- for env view
 
+ ## Docker Stop
+ docker stop <container name>
+ ## Docker Start
+ docker stop <container name> //run commend use to run new image and start commend use for stop contaner
+
+ ###Docker removed
+ docker rm <contanerName>
+ docker rm -f <contanerName> //for  force removed
+
+
+ 
+
  ### History
  docker history <contaner name>
+
+### docker logs
+docker logs <container ID>
+docker logs -f <container ID> // to follow
+
+## docker exec (to execatue the running container)
+docker exec <containerName> <ANY COMMAND>
+docker exec -it <containerName> sh // to open shell session
 
  
 
